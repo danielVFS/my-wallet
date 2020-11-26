@@ -26,22 +26,22 @@ const Aside: React.FC = () => {
       </Header>
 
       <MenuContainer>
-        <MenuItemLink href="/">
+        <MenuItemLink to="/dashboard">
           <MdDashboard />
           Dashboard
         </MenuItemLink>
 
-        <MenuItemLink href="/">
+        <MenuItemLink to="/list/entry-balance">
           <MdArrowUpward />
           Entradas
         </MenuItemLink>
 
-        <MenuItemLink href="/">
+        <MenuItemLink to="/list/exit-balance">
           <MdArrowDownward />
           Saídas
         </MenuItemLink>
 
-        <MenuItemLink href="/">
+        <MenuItemLink to="/">
           <MdExitToApp />
           Sair
         </MenuItemLink>
