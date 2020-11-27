@@ -5,6 +5,7 @@ import SelectInput from "../../components/SelectInput";
 import HistoryFinanceCard from "../../components/HistoryFinanceCard";
 
 import formatCurrent from "../../utils/formatCurrent";
+import formatDate from "../../utils/formatDate";
 
 import gains from "../../repositories/gains";
 import expenses from "../../repositories/expenses";
@@ -82,7 +83,7 @@ const List: React.FC<IRouteParams> = ({ match }) => {
         description: item.description,
         amountFormatted: formatCurrent(Number(item.amount)),
         frequency: item.frequency,
-        dataFormatted: item.date,
+        dataFormatted: formatDate(item.date),
         tagColor: item.frequency === "recorrente" ? "#4E41F0" : "#E44C4E",
       };
     });
