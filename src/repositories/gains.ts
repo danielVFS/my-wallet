@@ -81,7 +81,7 @@ export default [
     amount: "30.00",
     type: "saída",
     frequency: "eventual",
-    date: "2020-01-20",
+    date: "2020-10-20",
   },
   {
     description: "Emprestimo",

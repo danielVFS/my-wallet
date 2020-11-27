@@ -83,9 +83,17 @@ const List: React.FC<IRouteParams> = ({ match }) => {
   ];
 
   useEffect(() => {
-    const response = listData.map((item) => {
+    const filteredDate = listData.filter((item) => {
+      const date = new Date(item.date);
+      const month = String(date.getMonth() + 1);
+      const year = String(date.getFullYear());
+
+      return month === monthSelected && year === yearSelected;
+    });
+
+    const formattedData = filteredDate.map((item) => {
       return {
-        id: String(Math.random() * data.length),
+        id: String(new Date().getTime()),
         description: item.description,
         amountFormatted: formatCurrent(Number(item.amount)),
         frequency: item.frequency,
@@ -94,8 +102,8 @@ const List: React.FC<IRouteParams> = ({ match }) => {
       };
     });
 
-    setData(response);
-  }, []);
+    setData(formattedData);
+  }, [listData, monthSelected, yearSelected]);
 
   return (
     <Container>
