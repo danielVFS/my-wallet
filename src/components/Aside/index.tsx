@@ -17,6 +17,10 @@ import {
   MenuItemLink,
 } from "./styles";
 
+function reloadPage() {
+  window.location.reload();
+}
+
 const Aside: React.FC = () => {
   return (
     <Container>
@@ -26,22 +30,22 @@ const Aside: React.FC = () => {
       </Header>
 
       <MenuContainer>
-        <MenuItemLink to="/dashboard">
+        <MenuItemLink href="/dashboard">
           <MdDashboard />
           Dashboard
         </MenuItemLink>
 
-        <MenuItemLink to="/list/entry-balance">
-          <MdArrowUpward />
+        <MenuItemLink href="/list/entry-balance">
+          <MdArrowDownward />
           Entradas
         </MenuItemLink>
 
-        <MenuItemLink to="/list/exit-balance">
+        <MenuItemLink href="/list/exit-balance">
           <MdArrowDownward />
           Saídas
         </MenuItemLink>
 
-        <MenuItemLink to="/">
+        <MenuItemLink href="/">
           <MdExitToApp />
           Sair
         </MenuItemLink>
