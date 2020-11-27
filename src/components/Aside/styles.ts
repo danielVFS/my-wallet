@@ -33,7 +33,7 @@ export const MenuContainer = styled.nav`
 
   margin-top: 50px;
 `;
-
+/*
 export const MenuItemLink = styled.a`
   color: ${(props) => props.theme.colors.info};
   text-decoration: none;
@@ -53,8 +53,8 @@ export const MenuItemLink = styled.a`
     margin-right: 5px;
   }
 `;
+*/
 
-/*
 export const MenuItemLink = styled(Link)<LinkProps>`
   color: ${(props) => props.theme.colors.info};
   text-decoration: none;
@@ -74,4 +74,3 @@ export const MenuItemLink = styled(Link)<LinkProps>`
     margin-right: 5px;
   }
 `;
-*/
