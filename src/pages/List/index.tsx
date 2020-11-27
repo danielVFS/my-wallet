@@ -1,4 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
@@ -6,6 +7,7 @@ import HistoryFinanceCard from "../../components/HistoryFinanceCard";
 
 import formatCurrent from "../../utils/formatCurrent";
 import formatDate from "../../utils/formatDate";
+import listOfMonths from "../../utils/months";
 
 import gains from "../../repositories/gains";
 import expenses from "../../repositories/expenses";
@@ -52,20 +54,14 @@ const List: React.FC<IRouteParams> = ({ match }) => {
     return type === "entry-balance" ? gains : expenses;
   }, [type]);
 
-  const months = [
-    {
-      value: 10,
-      label: "Outubro",
-    },
-    {
-      value: 11,
-      label: "Novembro",
-    },
-    {
-      value: 12,
-      label: "Dezembro",
-    },
-  ];
+  const months = useMemo(() => {
+    return listOfMonths.map((month, index) => {
+      return {
+        value: index + 1,
+        label: month,
+      };
+    });
+  }, []);
 
   const years = useMemo(() => {
     let uniqueYears: number[] = [];
@@ -85,7 +81,7 @@ const List: React.FC<IRouteParams> = ({ match }) => {
         label: year,
       };
     });
-  }, []);
+  }, [listData]);
 
   useEffect(() => {
     const filteredDate = listData.filter((item) => {
@@ -98,7 +94,7 @@ const List: React.FC<IRouteParams> = ({ match }) => {
 
     const formattedData = filteredDate.map((item) => {
       return {
-        id: String(new Date().getTime()),
+        id: uuidv4(),
         description: item.description,
         amountFormatted: formatCurrent(Number(item.amount)),
         frequency: item.frequency,
