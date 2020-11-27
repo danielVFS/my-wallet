@@ -34,6 +34,26 @@ export const MenuContainer = styled.nav`
   margin-top: 50px;
 `;
 
+export const MenuItemLink = styled.a`
+  color: ${(props) => props.theme.colors.info};
+  text-decoration: none;
+
+  margin: 7px 0;
+  display: flex;
+  align-items: center;
+
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  > svg {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+`;
+
 /*
 export const MenuItemLink = styled(Link)<LinkProps>`
   color: ${(props) => props.theme.colors.info};
@@ -55,23 +75,3 @@ export const MenuItemLink = styled(Link)<LinkProps>`
   }
 `;
 */
-
-export const MenuItemLink = styled.a`
-  color: ${(props) => props.theme.colors.info};
-  text-decoration: none;
-
-  margin: 7px 0;
-  display: flex;
-  align-items: center;
-
-  transition: opacity 0.3s;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  > svg {
-    font-size: 18px;
-    margin-right: 5px;
-  }
-`;

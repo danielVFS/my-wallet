@@ -17,10 +17,6 @@ import {
   MenuItemLink,
 } from "./styles";
 
-function reloadPage() {
-  window.location.reload();
-}
-
 const Aside: React.FC = () => {
   return (
     <Container>
