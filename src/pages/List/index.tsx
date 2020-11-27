@@ -4,6 +4,8 @@ import ContentHeader from "../../components/ContentHeader";
 import SelectInput from "../../components/SelectInput";
 import HistoryFinanceCard from "../../components/HistoryFinanceCard";
 
+import formatCurrent from "../../utils/formatCurrent";
+
 import gains from "../../repositories/gains";
 import expenses from "../../repositories/expenses";
 
@@ -78,7 +80,7 @@ const List: React.FC<IRouteParams> = ({ match }) => {
       return {
         id: String(Math.random() * data.length),
         description: item.description,
-        amountFormatted: item.amount,
+        amountFormatted: formatCurrent(Number(item.amount)),
         frequency: item.frequency,
         dataFormatted: item.date,
         tagColor: item.frequency === "recorrente" ? "#4E41F0" : "#E44C4E",
