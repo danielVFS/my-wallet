@@ -343,6 +343,13 @@ export default [
     date: "2020-07-19",
   },
   {
+    description: "Pagar agiota",
+    amount: "750.01",
+    type: "entrada",
+    frequency: "eventual",
+    date: "2020-07-15",
+  },
+  {
     description: "Pizza",
     amount: "60.00",
     type: "saída",
