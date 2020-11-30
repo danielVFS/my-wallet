@@ -10,6 +10,8 @@ export const Container = styled.div`
   margin: 10px 0;
   padding: 20px 30px;
 
+  border-radius: 7px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
