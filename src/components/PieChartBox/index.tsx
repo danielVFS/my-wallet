@@ -9,18 +9,39 @@ import {
   SideRight,
 } from "./styles";
 
-const PieChartBox: React.FC = () => (
+interface IPiechartProps {
+  data: {
+    name: string;
+    value: number;
+    percent: number;
+    color: string;
+  }[];
+}
+
+const PieChartBox: React.FC<IPiechartProps> = ({ data }) => (
   <Container>
     <SideLeft>
       <h2>Relação</h2>
       <SubtitleContainer>
-        <Subtitle color="#F7931B">
-          <div>5%</div>
-          <span>Entradas</span>
-        </Subtitle>
+        {data.map((indicator) => (
+          <Subtitle key={indicator.name} color={indicator.color}>
+            <div>{indicator.percent}</div>
+            <span>{indicator.name}</span>
+          </Subtitle>
+        ))}
       </SubtitleContainer>
     </SideLeft>
-    <SideRight></SideRight>
+    <SideRight>
+      <ResponsiveContainer>
+        <PieChart>
+          <Pie data={data} dataKey="percent">
+            {data.map((indicator) => (
+              <Cell key={indicator.name} fill={indicator.color} />
+            ))}
+          </Pie>
+        </PieChart>
+      </ResponsiveContainer>
+    </SideRight>
   </Container>
 );
 
