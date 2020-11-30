@@ -350,6 +350,20 @@ export default [
     date: "2020-07-15",
   },
   {
+    description: "Academia",
+    amount: "1000.00",
+    type: "entrada",
+    frequency: "eventual",
+    date: "2020-08-10",
+  },
+  {
+    description: "Academia",
+    amount: "1500.00",
+    type: "entrada",
+    frequency: "eventual",
+    date: "2020-09-10",
+  },
+  {
     description: "Pizza",
     amount: "60.00",
     type: "saída",

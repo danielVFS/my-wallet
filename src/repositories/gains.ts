@@ -70,6 +70,20 @@ export default [
     date: "2020-07-10",
   },
   {
+    description: "Salário",
+    amount: "2500.00",
+    type: "entrada",
+    frequency: "recorrente",
+    date: "2020-08-10",
+  },
+  {
+    description: "Freela",
+    amount: "4500.00",
+    type: "entrada",
+    frequency: "eventual",
+    date: "2020-09-10",
+  },
+  {
     description: "Emprestimo",
     amount: "60.00",
     type: "saída",

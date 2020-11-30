@@ -25,7 +25,7 @@ const PieChartBox: React.FC<IPiechartProps> = ({ data }) => (
       <SubtitleContainer>
         {data.map((indicator) => (
           <Subtitle key={indicator.name} color={indicator.color}>
-            <div>{indicator.percent}</div>
+            <div>{indicator.percent}%</div>
             <span>{indicator.name}</span>
           </Subtitle>
         ))}
