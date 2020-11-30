@@ -35,6 +35,9 @@ export const Header = styled.header`
 `;
 export const SubtitleContainer = styled.ul`
   list-style: none;
+
+  display: flex;
+  padding-right: 16px;
 `;
 
 export const Subtitle = styled.li<ISubtitleProps>`
@@ -42,6 +45,7 @@ export const Subtitle = styled.li<ISubtitleProps>`
   align-items: center;
 
   margin-bottom: 7px;
+  margin-left: 7px;
 
   > div {
     background-color: ${(props) => props.color};

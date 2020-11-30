@@ -16,6 +16,8 @@ import {
   Subtitle,
 } from "./styles";
 
+import formatCurrency from "../../utils/formatCurrent";
+
 interface IHistoryBox {
   data: {
     month: string;
@@ -40,8 +42,6 @@ const HistoryBox: React.FC<IHistoryBox> = ({
           <div></div>
           <span>Entradas</span>
         </Subtitle>
-      </SubtitleContainer>
-      <SubtitleContainer>
         <Subtitle color={lineColorAmountOutput}>
           <div></div>
           <span>Saídas</span>
@@ -57,7 +57,7 @@ const HistoryBox: React.FC<IHistoryBox> = ({
         >
           <CartesianGrid strokeDasharray="3 3" stroke="#cecece" />
           <XAxis dataKey="month" stroke="#cecece" />
-          <Tooltip />
+          <Tooltip formatter={(value) => formatCurrency(Number(value))} />
           <Line
             type="monotone"
             dataKey="amountEntry"
