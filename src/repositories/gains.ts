@@ -107,7 +107,21 @@ export default [
   {
     description: "Salário",
     amount: "60.00",
-    type: "saída",
+    type: "entrada",
+    frequency: "eventual",
+    date: "2020-12-19",
+  },
+  {
+    description: "Salário",
+    amount: "60.00",
+    type: "entrada",
+    frequency: "recorrente",
+    date: "2020-12-19",
+  },
+  {
+    description: "Salário",
+    amount: "60.00",
+    type: "entrada",
     frequency: "eventual",
     date: "2020-12-19",
   },

@@ -391,4 +391,11 @@ export default [
     frequency: "eventual",
     date: "2020-12-19",
   },
+  {
+    description: "Pagar agiota",
+    amount: "130.00",
+    type: "saída",
+    frequency: "recorrente",
+    date: "2020-12-19",
+  },
 ];

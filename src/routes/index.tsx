@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./app.routes";
 
 const Routes: React.FC = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <AppRoutes />
   </BrowserRouter>
 );
