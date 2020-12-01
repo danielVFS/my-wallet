@@ -13,6 +13,5 @@ export default {
     sucess: "#4E41F0",
     info: "#F7931B",
     warning: "#E44C4E",
-    hello: "#1515",
   },
 };
