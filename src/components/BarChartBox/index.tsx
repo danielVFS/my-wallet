@@ -40,7 +40,7 @@ const BarChartBox: React.FC<IBarChartProps> = ({ title, data }) => {
       <SideRight>
         <ResponsiveContainer>
           <BarChart data={data}>
-            <Bar dataKey="amount" name="valor">
+            <Bar dataKey="amount" name="Valor">
               {data.map((indicator) => (
                 <Cell
                   key={indicator.name}
