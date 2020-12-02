@@ -1,7 +1,9 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
+import "react-toastify/dist/ReactToastify.min.css";
 
 import { useTheme } from "./hooks/theme";
 
@@ -12,6 +14,7 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <ToastContainer />
       <GlobalStyles />
       <Routes />
     </ThemeProvider>
