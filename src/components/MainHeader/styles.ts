@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ToggleComponent from "../Toggle";
 
 export const Container = styled.div`
   grid-area: MH;
@@ -20,9 +21,14 @@ export const Profile = styled.div`
 `;
 export const Welcome = styled.h3`
   font-size: 20px;
-
 `;
 export const UserName = styled.span`
   font-size: 20px;
   font-weight: bold;
+`;
+
+export const Toggle = styled(ToggleComponent)`
+  @media(max-width: 600px) {
+    display: none;
+  }
 `;

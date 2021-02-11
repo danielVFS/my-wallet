@@ -24,10 +24,10 @@ const Aside: React.FC = () => {
   const { signOut } = useAuth();
 
   return (
-    <Container>
+    <Container menuIsOpen={false}>
       <Header>
         <LogoImg src={logoImg} alt="Logo My Wallet" />
-        <Title>Catálogo Vivendo a História</Title>
+        <Title>Admin</Title>
       </Header>
 
       <MenuContainer>

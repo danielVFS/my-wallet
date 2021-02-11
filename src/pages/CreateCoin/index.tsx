@@ -11,7 +11,6 @@ const CreateCoin: React.FC = () => {
       <ContentHeader title="Cadastrar Moedas" lineColor="#4E41F0">
       </ContentHeader>
       <Content>
-        <h1>Cadastre suas moedas</h1>
         <Form>
           <Form.Group  controlId="formGroupEmail">
             <Form.Label>Email address</Form.Label>
