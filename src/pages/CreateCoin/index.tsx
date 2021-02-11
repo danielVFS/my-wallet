@@ -13,7 +13,7 @@ const CreateCoin: React.FC = () => {
       <Content>
         <h1>Cadastre suas moedas</h1>
         <Form>
-          <Form.Group controlId="formGroupEmail">
+          <Form.Group  controlId="formGroupEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group>
