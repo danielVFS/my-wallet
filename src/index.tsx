@@ -6,6 +6,8 @@ import { AuthProvider } from "./hooks/auth";
 
 import App from "./App";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
