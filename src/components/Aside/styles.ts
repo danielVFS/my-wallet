@@ -45,8 +45,7 @@ export const LogoImg = styled.img`
   width: 40px;
 
   @media(max-width: 600px) {
-    width: 30px;
-    height: 30px;
+    display: none;
   }
 `;
 
@@ -70,27 +69,6 @@ export const MenuContainer = styled.nav`
 
   margin-top: 50px;
 `;
-/*
-export const MenuItemLink = styled.a`
-  color: ${(props) => props.theme.colors.info};
-  text-decoration: none;
-
-  margin: 7px 0;
-  display: flex;
-  align-items: center;
-
-  transition: opacity 0.3s;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  > svg {
-    font-size: 18px;
-    margin-right: 5px;
-  }
-`;
-*/
 
 export const MenuItemLink = styled(Link) <LinkProps>`
   text-decoration: none;
@@ -132,5 +110,29 @@ export const MenuItemButton = styled.button`
   > svg {
     font-size: 18px;
     margin-right: 5px;
+  }
+`;
+
+export const ToggleMenu = styled.button`
+  width: 40px;
+  height: 40px;
+
+  border-radius: 5px;
+  font-size: 22px;
+  background-color: ${props => props.theme.colors.warning};
+  color: ${props => props.theme.colors.black};
+
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+  @media(max-width: 600px) {
+    display: block;
   }
 `;
