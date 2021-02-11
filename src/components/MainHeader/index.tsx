@@ -32,7 +32,7 @@ const MainHeader: React.FC = () => {
         labelLeft="Light"
         labelRight="Dark"
         checked={darkTheme}
-        onChange={handleChangeTheme}
+        onChange={() => null}
       />
 
       <Profile>
