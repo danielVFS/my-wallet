@@ -36,14 +36,14 @@ const Aside: React.FC = () => {
           Dashboard
         </MenuItemLink>
 
-        <MenuItemLink to="/list/entry-balance">
+        <MenuItemLink to="/create-coin">
           <MdArrowUpward />
-          Entradas
+            Cadastrar Moedas
         </MenuItemLink>
 
-        <MenuItemLink to="/list/exit-balance">
+        <MenuItemLink to="/remove-or-update-coin">
           <MdArrowDownward />
-          Saídas
+          Remover ou Atualizar
         </MenuItemLink>
 
         <MenuItemButton onClick={signOut}>
