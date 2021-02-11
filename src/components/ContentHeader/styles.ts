@@ -16,6 +16,7 @@ export const Container = styled.div`
 export const TitleContainer = styled.div<ITitleProps>`
   > h1 {
     color: ${(props) => props.theme.colors.white};
+    font-size: 35px;
 
     &::after {
       content: "";

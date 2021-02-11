@@ -6,6 +6,10 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  
+  a {
+    text-decoration: none;
+  }
 
   html, border-style, #root {
     height: 100%auto;
@@ -13,6 +17,7 @@ export default createGlobalStyle`
 
   *, input, button {
     border: 0;
+    text-decoration: none;
     outline: 0;
     font-family: 'Roboto', sans-serif;
   }

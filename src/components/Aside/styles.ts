@@ -24,7 +24,11 @@ export const LogoImg = styled.img`
 
 export const Title = styled.h3`
   color: ${(props) => props.theme.colors.white};
+  text-align: center;
+  margin-right: 5px;
   margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
 `;
 
 export const MenuContainer = styled.nav`
@@ -55,9 +59,9 @@ export const MenuItemLink = styled.a`
 `;
 */
 
-export const MenuItemLink = styled(Link)<LinkProps>`
-  color: ${(props) => props.theme.colors.info};
+export const MenuItemLink = styled(Link) <LinkProps>`
   text-decoration: none;
+  color: ${(props) => props.theme.colors.info};
 
   margin: 7px 0;
   display: flex;

@@ -16,6 +16,13 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
   color: ${(props) => props.theme.colors.white};
+  text-align: center;
 `;
-export const Welcome = styled.h3``;
-export const UserName = styled.span``;
+export const Welcome = styled.h3`
+  font-size: 20px;
+
+`;
+export const UserName = styled.span`
+  font-size: 20px;
+  font-weight: bold;
+`;

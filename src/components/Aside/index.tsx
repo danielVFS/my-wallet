@@ -27,7 +27,7 @@ const Aside: React.FC = () => {
     <Container>
       <Header>
         <LogoImg src={logoImg} alt="Logo My Wallet" />
-        <Title>Minha Carteira</Title>
+        <Title>Catálogo Vivendo a História</Title>
       </Header>
 
       <MenuContainer>
