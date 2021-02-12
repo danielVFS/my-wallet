@@ -27,7 +27,14 @@ export const DropzoneContainer = styled.div`
   align-items: center;
 `;
 
+export const DropzoneTitle = styled.h1`
+  font-size: 20px;
+`;
+
 export const DropzoneArea = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 

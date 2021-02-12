@@ -4,7 +4,7 @@ import { Form, Button, Col } from 'react-bootstrap';
 import ContentHeader from "../../components/ContentHeader";
 import Dropzone from '../../components/Dropzone';
 
-import { Container, Content, CirculationContainer, CirculationTitle, CirculationOptions, DropzoneContainer, DropzoneArea } from "./styles";
+import { Container, Content, CirculationContainer, CirculationTitle, CirculationOptions, DropzoneContainer, DropzoneTitle ,DropzoneArea } from "./styles";
 
 const CreateCoin: React.FC = () => {
   return (
@@ -112,8 +112,14 @@ const CreateCoin: React.FC = () => {
           </div>
 
           <DropzoneContainer>
-            <Dropzone />
-            <Dropzone />
+            <DropzoneArea>
+              <DropzoneTitle>Inserir Anverso</DropzoneTitle>
+              <Dropzone />
+            </DropzoneArea>
+            <DropzoneArea>
+              <DropzoneTitle>Inserir Reverso</DropzoneTitle>
+              <Dropzone />
+            </DropzoneArea>
           </DropzoneContainer>
           
           <Form.Group controlId="formDescription">
