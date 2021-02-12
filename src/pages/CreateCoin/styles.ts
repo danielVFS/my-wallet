@@ -12,10 +12,22 @@ export const CirculationContainer = styled.div`
   margin-top: 7px;
 `;
 
-export const CirculationTitle = styled.div``;
+export const CirculationTitle = styled.div`
+`;
 
 export const CirculationOptions = styled.div`
   display: flex;
   flex-direction: row;
+`;
+
+export const DropzoneContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const DropzoneArea = styled.div`
+  
 `;
 

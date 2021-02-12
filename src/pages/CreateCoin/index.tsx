@@ -2,8 +2,9 @@ import React from "react";
 import { Form, Button, Col } from 'react-bootstrap';
 
 import ContentHeader from "../../components/ContentHeader";
+import Dropzone from '../../components/Dropzone';
 
-import { Container, Content, CirculationContainer, CirculationTitle, CirculationOptions } from "./styles";
+import { Container, Content, CirculationContainer, CirculationTitle, CirculationOptions, DropzoneContainer, DropzoneArea } from "./styles";
 
 const CreateCoin: React.FC = () => {
   return (
@@ -105,6 +106,15 @@ const CreateCoin: React.FC = () => {
               <Form.Control type="text" placeholder="Papel fiduciário" />
             </Form.Group>
           </Form.Row>
+
+          <div className="d-flex justify-content-center">
+            <p className="h4">Exibição</p>
+          </div>
+
+          <DropzoneContainer>
+            <Dropzone />
+            <Dropzone />
+          </DropzoneContainer>
           
           <Form.Group controlId="formDescription">
             <Form.Label>Descrição</Form.Label>
